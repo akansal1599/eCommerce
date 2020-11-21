@@ -4,7 +4,7 @@ export default{
       _id: '1',
       name: 'Slim Shirt',
       category: 'Shirts',
-      image: '/images/d1.jpg',
+      image: '/images/img1.jpeg',
       price: 1200,
       brand: ' Nike',
     },
@@ -12,7 +12,7 @@ export default{
       _id: '2',
       name: 'Fit Shirt',
       category: 'Shirts',
-      image: '/images/d1.jpg',
+      image: '/images/img2.jpg',
       price: 1500,
       brand: ' Nike',
     }
