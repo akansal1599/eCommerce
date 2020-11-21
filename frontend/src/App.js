@@ -8,9 +8,7 @@ import SigninScreen from './screens/SigninScreen';
 import { useSelector,useDispatch } from 'react-redux';
 import RegisterScreen from './screens/RegisterScreen';
 import ShippingScreen from './screens/ShippingScreen';
-// import PaymentScreen from './screens/PaymentScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
-// import OrderScreen from './screens/OrderScreen';
 import OrderConfirmationScreen from "./screens/OrderConfirmationScreen";
 import {logout} from "./actions/userActions";
 
@@ -28,7 +26,6 @@ function App() {
       <div className="grid-container">
         <header className="header">
           <div className="brand">
-            {/*<button onClick={openMenu}>&#9776;</button>*/}
             <Link to="/">Shop<i className="fas fa-star"></i>
             </Link>
           </div>
@@ -48,15 +45,12 @@ function App() {
         </header>
         <main className="main">
           <div>
-            {/*<Route path="/order/:id" component={OrderScreen} />*/}
             <Route path="/shipping" component={ShippingScreen} />
-            {/*<Route path="/payment" component={PaymentScreen} />*/}
             <Route path="/placeorder" component={PlaceOrderScreen} />
             <Route path="/signin" component={SigninScreen} />
             <Route path="/register" component={RegisterScreen} />
             <Route path="/product/:id" component={ProductScreen} />
             <Route path="/cart/:id?" component={CartScreen} />
-            {/*<Route path="/category/:id" component={HomeScreen} />*/}
             <Route path="/confirm" component={OrderConfirmationScreen} />
             <Route path="/" exact={true} component={HomeScreen} />
           </div>
